@@ -1,0 +1,61 @@
+//общим шаблоном проекта. Там вы можете найти файл сброса,
+//некоторые типографские правила
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    //color: $color-text-primary;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%; //картинка тягнеться не більше її оригінального розміру
+    height: auto;
+
+    //точно по центру
+    object-fit: cover;
+    object-position: center;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+// .list {
+//     list-style-type: none;
+// }
+
+// .link {
+//     text-decoration: none;
+//     color: currentColor;
+// }
