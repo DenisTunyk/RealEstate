@@ -1,15 +1,19 @@
 //Import utils
 @import 'utils/variables';
 
-
 // Base settings
 @import 'base/base';
 
 
 // import layouts
-@import 'layouts/header.scss';
+@import 'layouts/header';
+@import 'layouts/page';
+@import 'layouts/main-block';
+@import 'layouts/body-main-block';
 
 // Import components
-@import 'components/menu.scss';
+@import 'components/menu';
+@import 'components/content-main-block';
+@import 'components/form-main-block';
 
 
