@@ -12,10 +12,10 @@ html {
 
 body {
     //color: $color-text-primary;
-    font-family: "Roboto", sans-serif;
+    font-family: "Manrope", sans-serif;
     letter-spacing: 0.03em;
-    font-size: 14px;
-    line-height: 1.71;
+    //font-size: 16px; за замовчування у браузера 16px
+    line-height: 1;
 }
 
 .no-scroll {
@@ -48,6 +48,48 @@ ul, ol, li {
 
 a {
     text-decoration: none;
+}
+
+.wrapper{
+    min-width: 100%;
+    overflow: hidden; // щоб не з'являвся горизонтальний скрол
+
+    //притискання футера до низу сторінки
+    display: flex;
+    flex-direction: column;
+}
+
+.page{
+    flex: 1 1 auto;
+}
+
+// .footer{
+//     margin-top: auto;
+// }
+
+//універсальний селектор означає, всюди де буде зустрічатися __container
+[class *="__container"]{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px; // ітого контентна область = 1700px
+}
+
+@media (max-width: 1199.98px) {
+    [class *="__container"] {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 990.98px) {
+    [class *="__container"] {
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    [class *="__container"] {
+        max-width: none;
+    }
 }
 
 

@@ -1,1 +1,15 @@
+//Import utils
+@import 'utils/variables';
+
+
+// Base settings
 @import 'base/base';
+
+
+// import layouts
+@import 'layouts/header.scss';
+
+// Import components
+@import 'components/menu.scss';
+
+
