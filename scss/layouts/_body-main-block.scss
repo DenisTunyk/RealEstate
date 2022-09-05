@@ -1,7 +1,7 @@
 .body-main-block{
     display: flex;
 
-    padding-top: 183px;
+    //padding-top: 183px;
 }
 
 .body-main-block__content{
@@ -10,4 +10,5 @@
 
 .body-main-block__slider{
     flex: 0 1 50%;
+    min-width: 0;
 }

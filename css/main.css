@@ -148,7 +148,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 183px;
 }
 
 .body-main-block__content {
@@ -161,6 +160,7 @@ a {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
+  min-width: 0;
 }
 
 .menu__list {
@@ -195,4 +195,31 @@ a {
   .menu__link {
     font-size: 18px;
   }
+}
+
+.body-main-block__body {
+  padding-right: 70px;
+}
+
+.content-main-block__sub-title {
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3181818182;
+  text-transform: uppercase;
+  color: #FF9900;
+}
+
+.content-main-block__title {
+  margin-bottom: 23px;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 1.3518518519;
+}
+
+.content-main-block__text {
+  margin-bottom: 45px;
+  font-size: 17px;
+  line-height: 1.3529411765;
+  letter-spacing: 0.01em;
 }/*# sourceMappingURL=main.css.map */

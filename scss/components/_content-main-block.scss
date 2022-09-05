@@ -1,0 +1,34 @@
+.content-main-block{
+
+}
+
+.body-main-block__body{
+    padding-right: 70px;
+}
+
+.content-main-block__sub-title{
+    margin-bottom: 24px;
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: calc(29 / 22);
+    text-transform: uppercase;
+
+    color: $color-subtitle;
+}
+
+.content-main-block__title{
+    margin-bottom: 23px;
+
+    font-weight: 800;
+    font-size: 54px;
+    line-height: calc(73 / 54);
+}
+
+.content-main-block__text{
+    margin-bottom: 45px;
+
+    font-size: 17px;
+    line-height: calc(23 / 17);
+    letter-spacing: 0.01em;
+}
