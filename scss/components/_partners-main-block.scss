@@ -1,0 +1,28 @@
+.partners-main-block{
+    max-width: 65%;
+}
+
+.partners-main-block__label{
+    margin-bottom: 27px;
+
+    font-size: 17px;
+    line-height: calc(23 / 17);
+    letter-spacing: 0.01em;
+    color: $color-label;
+}
+
+.partners-main-block__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+
+    //height: 23px;
+}
+
+.partner-main-block__item{
+
+    
+}
