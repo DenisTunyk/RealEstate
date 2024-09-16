@@ -1,25 +1,27 @@
 //общим шаблоном проекта. Там вы можете найти файл сброса,
 //некоторые типографские правила
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    border: none;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    //color: $color-text-primary;
-    font-family: "Manrope", sans-serif;
-    letter-spacing: 0.03em;
-    //font-size: 16px; за замовчування у браузера 16px
-    line-height: 1;
+  //color: $color-text-primary;
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 0.03em;
+  //font-size: 16px; за замовчування у браузера 16px
+  line-height: 1;
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 h1,
@@ -28,39 +30,41 @@ h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
-    font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%; //картинка тягнеться не більше її оригінального розміру
-    height: auto;
+  display: block;
+  max-width: 100%; //картинка тягнеться не більше її оригінального розміру
+  height: auto;
 
-    //точно по центру
-    object-fit: cover;
-    object-position: center;
+  //точно по центру
+  object-fit: cover;
+  object-position: center;
 }
 
-ul, ol, li {
-    list-style: none;
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.wrapper{
-    min-width: 100%;
-    overflow: hidden; // щоб не з'являвся горизонтальний скрол
+.wrapper {
+  min-width: 100%;
+  overflow: hidden; // щоб не з'являвся горизонтальний скрол
 
-    //притискання футера до низу сторінки
-    display: flex;
-    flex-direction: column;
+  //притискання футера до низу сторінки
+  display: flex;
+  flex-direction: column;
 }
 
-.page{
-    flex: 1 1 auto;
+.page {
+  flex: 1 1 auto;
 }
 
 // .footer{
@@ -68,30 +72,29 @@ a {
 // }
 
 //універсальний селектор означає, всюди де буде зустрічатися __container
-[class *="__container"]{
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px; // ітого контентна область = 1700px
+[class*='__container'] {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; // ітого контентна область = 1700px
 }
 
 @media (max-width: 1199.98px) {
-    [class *="__container"] {
-        max-width: 970px;
-    }
+  [class*='__container'] {
+    max-width: 970px;
+  }
 }
 
 @media (max-width: 990.98px) {
-    [class *="__container"] {
-        max-width: 750px;
-    }
+  [class*='__container'] {
+    max-width: 750px;
+  }
 }
 
 @media (max-width: 767.98px) {
-    [class *="__container"] {
-        max-width: none;
-    }
+  [class*='__container'] {
+    max-width: none;
+  }
 }
-
 
 // .list {
 //     list-style-type: none;
