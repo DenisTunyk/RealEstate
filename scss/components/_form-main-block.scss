@@ -2,20 +2,33 @@
   position: relative;
   z-index: 2;
   display: flex;
-  height: 86px;
+  //min-height: 86px;
   margin-right: -188px;
 
-  background: #fff url('../../images/svg/house.svg') 0 0 no-repeat;
+  background: #fff url(./../images/svg/house.svg) 33px 32px no-repeat;
 
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
     0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015),
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
+
+  @media (max-width: 1199.98px) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 767.98px) {
+    display: block;
+  }
+
+  @media (max-width: 479.98px) {
+    background: #fff;
+  }
 }
 
 .form-main-block__input {
   flex: 1 1 auto;
   width: 100%;
+  height: 86px;
   padding: 0px 0px 0px 74px;
   background-color: transparent;
 
@@ -29,10 +42,15 @@
     color: $color-logo;
     opacity: 0.3;
   }
+
+  @media (max-width: 479.98px) {
+    padding: 0px 15px;
+  }
 }
 
 .form-main-block__button {
   box-sizing: border-box;
+  height: 86px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,5 +67,15 @@
   letter-spacing: 0.01em;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease 0s;
   //border: 1px solid #000000;
+
+  &:hover {
+    background-color: #b9473a;
+  }
+
+  @media (max-width: 797.98px) {
+    width: 100%;
+  }
 }

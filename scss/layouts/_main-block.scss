@@ -1,21 +1,32 @@
-.main-block{}
-
-.main-block__body{
-    margin-bottom: 14px;
+.main-block {
+  padding-bottom: 110px;
 }
 
-.main-block__container{
-    padding-top: 183px;
-    position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        top: 0;
-        //right: 0;
-        left: 67%;
-        width: 200%;
-        height: 100%;
-        
-        background-color: $color-main-background;
-    }
+.main-block__body {
+  margin-bottom: 14px;
+
+  @media (max-width: 1199.98px) {
+    margin-bottom: 40px;
+  }
+}
+
+.main-block__container {
+  padding-top: 183px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    //right: 0;
+    left: 67%;
+    width: 200%;
+    height: 100%;
+
+    background-color: $color-main-background;
+  }
+
+  @media (max-width: 1199.98px) {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
 }

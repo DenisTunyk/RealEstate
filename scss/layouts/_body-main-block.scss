@@ -1,14 +1,21 @@
-.body-main-block{
-    display: flex;
-    align-items: flex-start;
-    //padding-top: 183px;
+.body-main-block {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  //padding-top: 183px;
+  @media (max-width: 1199.98px) {
+    display: block;
+  }
 }
 
-.body-main-block__content{
-    flex: 0 1 50%;
+.body-main-block__content {
+  flex: 0 1 50%;
+  @media (max-width: 1199.98px) {
+    margin-bottom: 40px;
+  }
 }
 
-.body-main-block__slider{
-    flex: 0 1 50%;
-    min-width: 0;
+.body-main-block__slider {
+  flex: 0 1 50%;
+  min-width: 0;
 }
