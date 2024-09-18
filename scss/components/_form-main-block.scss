@@ -12,16 +12,16 @@
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
 
-  @media (max-width: 1199.98px) {
-    margin-right: 0;
+  @media (max-width: 479.98px) {
+    background: #fff;
   }
 
   @media (max-width: 767.98px) {
     display: block;
   }
 
-  @media (max-width: 479.98px) {
-    background: #fff;
+  @media (max-width: 1199.98px) {
+    margin-right: 0;
   }
 }
 
@@ -50,7 +50,7 @@
 
 .form-main-block__button {
   box-sizing: border-box;
-  height: 86px;
+  min-height: 86px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,12 +4,12 @@
 // Base settings
 @import 'base/base';
 
-
 // import layouts
 @import 'layouts/header';
 @import 'layouts/page';
 @import 'layouts/main-block';
 @import 'layouts/body-main-block';
+@import 'layouts/how';
 
 // Import components
 @import 'components/menu';
@@ -17,5 +17,5 @@
 @import 'components/form-main-block';
 @import 'components/partners-main-block';
 @import 'components/slider-main-block';
-
-
+@import 'components/title';
+@import 'components/item-how';
