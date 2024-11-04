@@ -1,0 +1,39 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 10px 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  z-index: 10000000001;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  &:hover .menu-button__close,
+  &:focus .menu-button__close {
+    fill: $color-blue;
+  }
+}
+
+.menu-button__close {
+  display: none;
+  width: 40px;
+  height: 40px;
+  transition: fill 250ms $timing-function;
+
+  .menu-button.is-open & {
+    display: block;
+  }
+}
+
+.menu-button__menu {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  .menu-button.is-open & {
+    display: none;
+  }
+}
