@@ -1,0 +1,70 @@
+.deals {
+  padding-top: 110px;
+}
+.deals__header {
+  margin-bottom: 50px;
+}
+.header_deals {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header_deals__content {
+  flex: 1 1 auto;
+}
+.header_deals__text {
+  max-width: 470px;
+  line-height: 24px;
+}
+.header_deals__link {
+  background-color: $color-back-button;
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+  line-height: 23px;
+  padding: 22px 33px;
+  box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07),
+    0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481),
+    0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035),
+    0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815),
+    0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
+  border-radius: 5px;
+  &:hover,
+  &:focus {
+    background-color: #b9473a;
+  }
+}
+
+.tabs-deals__nav {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.tabs-deals__button {
+  position: relative;
+  font-size: 19px;
+  line-height: 26px;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+    color: $color-back-button;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease 0s;
+    background-color: $color-back-button;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
