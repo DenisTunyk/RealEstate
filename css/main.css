@@ -1406,6 +1406,19 @@ a {
 }
 .deals {
   padding-top: 110px;
+  padding-bottom: 110px;
+}
+@media (max-width: 991.98px) {
+  .deals {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .deals {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .deals__header {
@@ -1416,6 +1429,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1451,6 +1466,11 @@ a {
 .header_deals__link:hover, .header_deals__link:focus {
   background-color: #b9473a;
 }
+@media (max-width: 767.98px) {
+  .header_deals__link {
+    width: 100%;
+  }
+}
 
 .tabs-deals__nav {
   display: -webkit-box;
@@ -1462,6 +1482,7 @@ a {
      -moz-column-gap: 50px;
           column-gap: 50px;
   row-gap: 10px;
+  margin-bottom: 45px;
 }
 
 .tabs-deals__button {
@@ -1487,4 +1508,83 @@ a {
 }
 .tabs-deals__button:hover::after {
   width: 100%;
+}
+.tabs-deals__button.active {
+  color: #f85a47;
+}
+.tabs-deals__button.active::after {
+  width: 100%;
+}
+
+.item-tabs__items {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.item-tabs__image {
+  position: relative;
+  display: block;
+  padding-bottom: 81%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.item-tabs__image:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.item-tabs__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+}
+
+.item-tabs__item {
+  position: relative;
+}
+
+.item-tabs__options {
+  position: absolute;
+  z-index: 2;
+  left: 14px;
+  top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 6px;
+}
+
+.item-tabs__option {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 6px 12px;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+}
+
+.item-tabs__option:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tabs-deals__item {
+  display: none;
+}
+
+.tabs-deals__item.active {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
