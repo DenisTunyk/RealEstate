@@ -10,6 +10,7 @@
 @import 'layouts/main-block';
 @import 'layouts/body-main-block';
 @import 'layouts/how';
+@import 'layouts/footer';
 
 // Import components
 @import 'components/menu';
@@ -28,3 +29,8 @@
 @import 'components/main-nav';
 @import 'components/m.scss';
 @import 'components/deals.scss';
+@import 'components/featured';
+@import 'components/rating';
+@import 'components/reviews';
+@import 'components/subscribe';
+@import 'components/social';
